@@ -1,0 +1,10 @@
+.git
+.gitignore
+.github
+.gitattributes
+READMETEMPLATE.md
+README.md
+
+/config
+/db
+/music

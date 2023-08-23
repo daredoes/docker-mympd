@@ -1,0 +1,7 @@
+audio_output {
+    type            "fifo"
+    name            "Snapserver"
+    path            "/tmp/snapfifo_mympd"
+    format          "48000:16:2"
+    mixer_type      "software"
+}
