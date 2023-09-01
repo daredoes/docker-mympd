@@ -23,6 +23,9 @@ RUN useradd -ms /bin/bash mympd
 EXPOSE 6600 8080 9001
 ENV ALSA_OUTPUT_CREATE "no"
 ENV ALSA_OUTPUT_ENABLED "no"
+ENV MPD_BIND_ADDRESS "/run/mpd/socket"
+ENV MPD_HOST "/run/mpd/socket"
+RUN mkdir /run/mpd && touch /run/mpd/socket
 
 VOLUME /user/config /music /log /playlists /db
 ENTRYPOINT [ "/start.sh" ]
